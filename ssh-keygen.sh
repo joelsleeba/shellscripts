@@ -8,7 +8,7 @@ sshkeygen() {
     chmod 600 "$SSHKEY"
     echo -e "\n\nAccess ssh public key in pastebin here:"
     cat "$SSHKEY.pub" | nc termbin.com 9999
-    #ssh-add -t 15 "$SSHKEY"
+    ssh-add -t 15 "$SSHKEY"
     export SSHKEY
 }
 
