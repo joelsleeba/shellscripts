@@ -8,7 +8,9 @@ perl ./install-tl --texdir=$HOME/.local/texlive --scheme=medium --no-interaction
 
 cat >>$HOME/.profile <<'EOL'
 # set PATH so it includes user's private texlive bin if it exists
-if [ -d "$HOME/.local/texlive/bin" ] ; then
-    PATH="$HOME/.local/texlive/bin:$PATH"
+if [ -d "$HOME/.local/texlive/bin/x86_64-linux" ] ; then
+    PATH="$HOME/.local/texlive/bin/x86_64-linux:$PATH"
 fi
 EOL
+
+source $HOME/.profile
