@@ -5,4 +5,6 @@ cd $HOME/Downloads/zsh-master
 ./configure --prefix=$HOME/.local
 make prefix=$HOME/.local all doc info
 make prefix=$HOME/.local install
+echo "zsh" >> $HOME/.bashrc
+source .bashrc
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
