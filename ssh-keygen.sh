@@ -1,3 +1,4 @@
+#!/bin/bash
 sshkeygen() {
     KEYNAME="sleeba $(date +"%d-%m-%Y %H:%M:%S")"
     if [[ ! -e $HOME/.ssh/ ]]; then
