@@ -7,3 +7,4 @@ cd Python-3.10.6
 ./configure --prefix=$HOME/.local --enable-optimizations --with-ensurepip=install
 make -j 4
 make install
+cd $OLDPWD

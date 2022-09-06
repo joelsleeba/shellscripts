@@ -1,3 +1,4 @@
+OLDPWD=$PWD
 cd /tmp
 wget https://ftpmirror.gnu.org/octave/octave-7.2.0.tar.gz && \
 tar -xzf octave-7.2.0.tar.gz                               && \
@@ -17,3 +18,4 @@ EOL
 
 source $HOME/.profile
 
+cd $OLDPWD

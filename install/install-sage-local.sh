@@ -12,6 +12,7 @@ if [[ ! $(conda --version) ]]; then
     fi
 fi
 
+cd $OLDPWD
 conda config --set auto_activate_base false
 conda update conda
 conda config --add channels conda-forge
